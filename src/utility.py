@@ -3,6 +3,7 @@ from src.board import Board
 from src.townhall import townhall
 from src.hut import hut
 from src.cannon import Cannon
+from src.king import King
 from src.walls import wall
 
 obj_board = Board(HT, WIDTH)
@@ -37,3 +38,6 @@ obj_can2 = Cannon((int)(3*WIDTH/5), (int)(5*HT/6))
 obj_can2.cannon_show(obj_board.grid)
 obj_can3 = Cannon((int)(4*WIDTH/5), (int)(HT/3))
 obj_can3.cannon_show(obj_board.grid)
+
+bking = King(2,2)
+bking.king_show(obj_board.grid)

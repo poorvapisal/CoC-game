@@ -11,14 +11,17 @@ from src.input import *
 HT=40
 SCREEN=200
 WIDTH=200
+obj_hut=[]
+obj_townhall=[]
 T_HITS=10
 H_HITS=5
 T_COL=3
 H_COL=3
 W=Fore.BLACK+"#"+Fore.RESET
+TROOP=6
+COUNT=0
+obj_troop=[]
 
-obj_hut=[]
-obj_townhall=[]
 
 DICT1={1:[(int)(3*WIDTH/4),(int)(3*WIDTH/4)+1],2:[(int)(WIDTH/8),(int)(WIDTH/8)+1],3:[(int)(7*WIDTH/8),(int)(7*WIDTH/8)+1],4:[(int)(2*WIDTH/9),(int)(2*WIDTH/9)+1],5:[(int)(3*WIDTH/5),(int)(3*WIDTH/5)+1]} 
 DICT2=[(int)(WIDTH/2)-2,(int)(WIDTH/2)-1,(int)(WIDTH/2)]
