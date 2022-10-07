@@ -17,6 +17,13 @@ T_COL=3
 H_COL=3
 W=Fore.BLACK+"#"+Fore.RESET
 
+obj_hut=[]
+obj_townhall=[]
+
+DICT1={1:[(int)(3*WIDTH/4),(int)(3*WIDTH/4)+1],2:[(int)(WIDTH/8),(int)(WIDTH/8)+1],3:[(int)(7*WIDTH/8),(int)(7*WIDTH/8)+1],4:[(int)(2*WIDTH/9),(int)(2*WIDTH/9)+1],5:[(int)(3*WIDTH/5),(int)(3*WIDTH/5)+1]} 
+DICT2=[(int)(WIDTH/2)-2,(int)(WIDTH/2)-1,(int)(WIDTH/2)]
+DICT3={1:[(int)(3*WIDTH/4), (int)(4*HT/5)], 2:[(int)(WIDTH/8), (int)(HT/7)], 3:[(int)(7*WIDTH/8), (int)(HT/11)], 4:[(int)(2*WIDTH/9), (int)(3*HT/5)], 5:[(int)(3*WIDTH/5), (int)(2*HT/7)], 6:[(int)(WIDTH/2)-2, (int)(HT/2)-1]}
+
 def game_over():
     os.system('aplay -q ./src/sounds/sounds_game_over.wav&')
     print(Fore.LIGHTMAGENTA_EX + Style.BRIGHT+ "                                                     ".center(SCREEN))                 
