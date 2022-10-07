@@ -11,7 +11,24 @@ class King(Person):
         y = self.gety()
 
         grid[y][x] = "K"
+    
+    def axe(self, grid):
         
+        for i in range (self.getx()-5, self.getx()+5):
+            for j in range (self.gety()-5, self.gety()+5):
+                if grid[j][i] == "H":
+                    print()
+
+    def displayHealth(self):
+        bar = '|'
+        for i in range(int(self._health / 2)):
+            bar += '■'
+
+        for _ in range(int((20 - self._health) / 2)):
+            bar += ' '
+        bar += '|'
+        print (bar)
+
     def move(self, temp, color_grid, grid):
 
         k1=0
