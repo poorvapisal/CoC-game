@@ -2,6 +2,7 @@ from src.building import *
 from src.headers import *
 huts = [list("HH"), list("HH")]
 
+
 class hut(Building):
 
     def __init__(self, x, y):
@@ -11,7 +12,7 @@ class hut(Building):
     def hut_show(self, color_grid, grid):
         x = self.getx()
         y = self.gety()
-        
+
         color_char = 'w'
 
         if self._hitpoints <= 5 and self._hitpoints > 3:
@@ -26,7 +27,9 @@ class hut(Building):
             self.__color = Fore.RED
             color_char = 'r'
 
-        if (self._hitpoints != 0):
+        if (self._hitpoints != 0 and self._hitpoints > 0):
+            # time.sleep(0.5)
+            # print("self_hitpoints:\n", self._hitpoints)
             for i in range(y, y+2):
                 for j in range(x, x+2):
                     grid[i][j] = huts[i-y][j-x]
@@ -36,5 +39,3 @@ class hut(Building):
             for i in range(y, y+2):
                 for j in range(x, x+2):
                     grid[i][j] = "."
-
-        
