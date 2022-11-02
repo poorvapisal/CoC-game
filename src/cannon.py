@@ -6,10 +6,10 @@ class Cannon(Building):
     def __init__(self, x, y):
         Building.__init__(self, x, y, 1, 5)
 
-    def cannon_show(self, grid):
+    def show(self, grid):
         x = self.getx()
         y = self.gety()
 
-        grid[y][x] = Fore.YELLOW + "$" + Fore.RESET   
+        grid[y][x] = Fore.YELLOW + "$" + Fore.RESET 
         
            
