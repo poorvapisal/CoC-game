@@ -10,7 +10,7 @@ from src.input import *
 
 HT=40
 SCREEN=150
-WIDTH=200
+WIDTH=150
 obj_hut=[]
 obj_townhall=[]
 arrow=0
