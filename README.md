@@ -8,7 +8,7 @@ Run: python3 play.py
 
 - 0/1 - pick King/Queen as the hero
 - w/s/a/d - control the King/Queen
-- <space> - attack using King/Queen
+- space - attack using King/Queen
 - To spawn each kind of troops from the three points:
   - j/k/l - barbarians
   - b/n/m - archers
