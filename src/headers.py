@@ -9,7 +9,7 @@ import random
 from src.input import *
 
 HT=40
-SCREEN=200
+SCREEN=150
 WIDTH=200
 obj_hut=[]
 obj_townhall=[]
